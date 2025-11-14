@@ -1,1 +1,124 @@
+public class Person {
 
+    private String title;
+    private String givenName;
+    private String name;
+    private String middleName;
+    private String familyName;
+    private String fullName;
+    private String birthDate;   // Peut être LocalDate
+    private String gender;
+    private String homeAddress;
+    private String phone;
+
+    // --------- Constructeur ---------
+    public Person(String title, String givenName, String name, String middleName,
+                  String familyName, String fullName, String birthDate,
+                  String gender, String homeAddress, String phone) {
+
+        this.title = title;
+        this.givenName = givenName;
+        this.name = name;
+        this.middleName = middleName;
+        this.familyName = familyName;
+        this.fullName = fullName;
+        this.birthDate = birthDate;
+        this.gender = gender;
+        this.homeAddress = homeAddress;
+        this.phone = phone;
+    }
+
+    // --------- Getters & Setters ---------
+    public String getTitle() { return title; }
+    public void setTitle(String title) { this.title = title; }
+
+    public String getGivenName() { return givenName; }
+    public void setGivenName(String givenName) { this.givenName = givenName; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public String getMiddleName() { return middleName; }
+    public void setMiddleName(String middleName) { this.middleName = middleName; }
+
+    public String getFamilyName() { return familyName; }
+    public void setFamilyName(String familyName) { this.familyName = familyName; }
+
+    public String getFullName() { return fullName; }
+    public void setFullName(String fullName) { this.fullName = fullName; }
+
+    public String getBirthDate() { return birthDate; }
+    public void setBirthDate(String birthDate) { this.birthDate = birthDate; }
+
+    public String getGender() { return gender; }
+    public void setGender(String gender) { this.gender = gender; }
+
+    public String getHomeAddress() { return homeAddress; }
+    public void setHomeAddress(String homeAddress) { this.homeAddress = homeAddress; }
+
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
+}
+public class Patient extends Person {
+
+    private String id;
+    private String gender;
+    private String birthDate;
+    private int age;
+    private String accepted;
+    private String sickness;
+    private String[] prescriptions;
+    private String[] allergies;
+    private String[] specialRequests;
+
+    // --------- Constructeur ---------
+    public Patient(String title, String givenName, String name, String middleName,
+                   String familyName, String fullName, String birthDatePerson,
+                   String genderPerson, String homeAddress, String phone,
+
+                   String id, String gender, String birthDate, int age,
+                   String accepted, String sickness, String[] prescriptions,
+                   String[] allergies, String[] specialRequests) {
+
+        super(title, givenName, name, middleName, familyName, fullName,
+              birthDatePerson, genderPerson, homeAddress, phone);
+
+        this.id = id;
+        this.gender = gender;
+        this.birthDate = birthDate;
+        this.age = age;
+        this.accepted = accepted;
+        this.sickness = sickness;
+        this.prescriptions = prescriptions;
+        this.allergies = allergies;
+        this.specialRequests = specialRequests;
+    }
+
+    // --------- Getters & Setters ---------
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
+
+    public String getGender() { return gender; }
+    public void setGender(String gender) { this.gender = gender; }
+
+    public String getBirthDate() { return birthDate; }
+    public void setBirthDate(String birthDate) { this.birthDate = birthDate; }
+
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+
+    public String getAccepted() { return accepted; }
+    public void setAccepted(String accepted) { this.accepted = accepted; }
+
+    public String getSickness() { return sickness; }
+    public void setSickness(String sickness) { this.sickness = sickness; }
+
+    public String[] getPrescriptions() { return prescriptions; }
+    public void setPrescriptions(String[] prescriptions) { this.prescriptions = prescriptions; }
+
+    public String[] getAllergies() { return allergies; }
+    public void setAllergies(String[] allergies) { this.allergies = allergies; }
+
+    public String[] getSpecialRequests() { return specialRequests; }
+    public void setSpecialRequests(String[] specialRequests) { this.specialRequests = specialRequests; }
+}
