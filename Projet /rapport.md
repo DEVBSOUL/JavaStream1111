@@ -3,4 +3,4 @@ Numero de groupe : 2
 Nom    : El younessi
 Prenom : Soulaimane
 
-Le diagramme représente la modélisation d’un système de gestion hospitalière en utilisant une structure orientée objet. Il décrit les principales classes, leurs attributs, ainsi que les relations entre les entités du système.
+Ce diagramme UML représente un système de gestion hospitalière avec les principales entités : Person, Patient, Hospital, Department et Staff. Il montre l’héritage entre Person, Patient et les différents types de Staff (médecins, infirmiers, techniciens, réceptionnistes…). Il organise la structure interne d’un hôpital avec ses départements et la répartition du personnel. Enfin, il décrit les attributs essentiels de chaque classe et les relations entre patients, employés et services hospitaliers.
